@@ -1,6 +1,4 @@
-package ExceptionTest;
-
-public class Main {
+public class ExceptionTest {
     public static void main(String[] args) {
         int c;
         c = 4 / 1;

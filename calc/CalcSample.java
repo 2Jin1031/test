@@ -1,3 +1,5 @@
+package calc;
+
 public class CalcSample {
     public int add(int a, int b) {
         return (a + b);

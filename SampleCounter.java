@@ -1,2 +1,19 @@
-package PACKAGE_NAME;public class SampleCounter {
+class Updater {
+    void update (Counter counter) {
+        counter.count++;
+    }
+}
+
+class Counter {
+    int count = 0;
+}
+
+public class SampleCounter {
+    public static void main(String[] args) {
+        Counter myCounter = new Counter();
+        System.out.println("before : " + myCounter.count);
+        Updater myUpdater = new Updater();
+        myUpdater.update(myCounter);
+        System.out.println("after : " + myCounter.count);
+    }
 }
