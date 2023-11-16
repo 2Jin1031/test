@@ -5,7 +5,7 @@ public class main {
         MenuItem[] menuItems = MenuItem.getMenuNames();
 
         for (int i = 0; i < menuItems.length; i++) {
-            System.out.println(menuItems[i].getPrice());
+            System.out.println(menuItems[i]);
         }
     }
 }
