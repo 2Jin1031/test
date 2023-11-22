@@ -1,12 +1,8 @@
-package PackageTest;
+package PackageTest.app;
 
-abstract class Calculator {
-    public abstract int add(int a, int b);
-    public abstract int subtract(int a, int b);
-    public abstract double average(int[] a);
-}
+import PackageTest.lib.Calculator;
 
-public class GoodCalc extends Calculator{
+public class GoodCalc extends Calculator {
     @Override
     public int add(int a, int b) {
         return a + b;
