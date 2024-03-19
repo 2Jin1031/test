@@ -1,24 +1,23 @@
 package ArrayORList;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
+
+import static java.util.Arrays.stream;
 
 public class TypeTest {
 
     public static void main(String[] args) {
-        int [] arrayName = new int[5];
+        int[] arrayName = new int[5];
         for (int i = 0; i < 5; i++) {
             arrayName[i] = i;
         }
 
-        ArrayList<Object> arrayListName = new ArrayList<>();
+        ArrayList<Integer> arrayListName = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             arrayListName.add(i);
         }
 
-        LinkedList<Object> linkedListName = new LinkedList<>();
+        LinkedList<Integer> linkedListName = new LinkedList<>();
         for (int i = 0; i < 5; i++) {
             linkedListName.add(i);
         }
@@ -29,10 +28,20 @@ public class TypeTest {
         }
 
         // print
-        System.out.println(Arrays.toString(arrayName));
-        System.out.println(arrayListName);
-        System.out.println(linkedListName);
-        System.out.println(listName);
-    }
+//        System.out.println(Arrays.toString(arrayName));
+//        System.out.println(arrayListName);
+//        System.out.println(linkedListName);
+//        System.out.println(listName);
 
+        List<Integer> list1 = linkedListName;
+        List<Integer> list2 = new ArrayList<>(linkedListName);
+        list1.add(7);
+        list2.add(8);
+
+        System.out.println("linkedListName = " + linkedListName);
+        System.out.println("list1 = " + list1);
+        System.out.println("list2 = " + list2);
+
+
+    }
 }
